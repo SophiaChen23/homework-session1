@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id = "cliff">
+
+
+<header>
+
+
+  <div class = "main-header">
+    <dic class = "logo">
+      <img src = "images/logo.png" alt = "Great Cliffs Logo" width = "125">
+    </dic>
+
+    <nav class = "main-menu">
+      <ul>
+        <li ><a href="index.html">Home</a></li>
+        <li class = "active"><a href = "cliffs.html"> Cliffs</a></li>
+        <li><a href = "activities.html">Activities</a></li>
+        <li><a href = "contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section id = "timeofday">
+  <span> Your Current Local Time: </span>
+  <span id = "clock"><</span>
+</section>
+<br><br>
+<h1 id = "bear">California's Greatest Cliffs</h1>
+<p>
+  The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.
+ <br><br>
+  No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.
+</p>
+<br><br>
+<div class="picture-wall">
+  <div class="picture">
+    <div class="header">West Cliff</div>
+    <img src="images/cliff-west-sea.jpg" alt="Image 1">
+<!--    <div class="label">Image 1</div>-->
+  </div>
+  <div class="picture">
+    <div class="header">North Cliff</div>
+    <img src="images/cliff-north-mountain.jpg" alt="Image 2">
+<!--    <div class="label">Image 2</div>-->
+  </div>
+  <div class="picture">
+    <div class="header">East Cliff</div>
+    <img src="images/cliff-east-river.jpg" alt="Image 3">
+<!--    <div class="label">Image 3</div>-->
+  </div>
+  <div class="picture">
+    <div class="header">South Cliff</div>
+    <img src="images/cliff-south-canyon.jpg" alt="Image 4">
+<!--    <div class="label">Image 4</div>-->
+  </div>
+</div>
+
+
+<br><br>
+
+<section>
+  <ul id = "partners">
+    <script src="js/site_scripts.js"></script>
+  </ul>
+</section>
+
+
+<footer>
+  <div id = "nondisclaimer">
+    <div class = "copy">
+      &copy Copyright 2020 :: GreatCliffs.com
+    </div>
+    <div class = "social">
+      <a href = "#" class = "fa fa-facebook"></a>
+      <a href = "#" class = "fa fa-instagram"></a>
+      <a href = "#" class = "fa fa-twitter"></a>
+    </div>
+  </div>
+  <div id = "disclaimer">
+    <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+  </div>
+</footer>
+<script  src = "js/digclock.js"></script>
+<!--<script>-->
+<!--  function currentTime() {-->
+<!--    var d = new Date();-->
+<!--    var hr = d.getHours();-->
+<!--    var min = d.getMinutes();-->
+<!--    var sec = d.getSeconds();-->
+<!--    var ampm;-->
+
+<!--    var utchr = d.getUTCHours();-->
+<!--    // console.log(hr + " " + utchr);-->
+<!--    utchr = utchr < hr ? utchr + 24 : utchr;-->
+
+<!--    // var gmtHour = utchr > 12 ? utchr - 12 : utchr;-->
+
+
+<!--    // var localHour = d.getHours();-->
+
+<!--    var timeDiff = utchr - hr;-->
+<!--    var adjTimeDiff = Math.abs(timeDiff);-->
+
+
+<!--    var convertedTimezoneAbbr = "";-->
+<!--    switch (adjTimeDiff) {-->
+<!--      case 7:-->
+<!--        convertedTimezoneAbbr = "PT";-->
+<!--        break;-->
+<!--      case 6:-->
+<!--        convertedTimezoneAbbr = "MT";-->
+<!--        break;-->
+<!--      case 5:-->
+<!--        convertedTimezoneAbbr = "CT";-->
+<!--        break;-->
+<!--      case 4:-->
+<!--        convertedTimezoneAbbr = "ET";-->
+<!--        break;-->
+<!--      default:-->
+<!--        convertedTimezoneAbbr = "nothing"; // Use original abbreviation if no match-->
+<!--        break;-->
+<!--    }-->
+
+
+
+<!--    if (sec < 10) {-->
+<!--      sec = "0" + sec;-->
+<!--    }-->
+<!--    if (min < 10) {-->
+<!--      min = "0" + min;-->
+<!--    }-->
+<!--    if (hr == 12) {-->
+<!--      ampm = "PM";-->
+<!--    } else if (hr > 12){-->
+<!--      ampm = "PM";-->
+<!--    } else {-->
+<!--      ampm = "AM";-->
+<!--    }-->
+<!--    var time = hr + ":" + min + ":" + sec + " " + ampm + " " + convertedTimezoneAbbr;-->
+
+
+<!--    document.getElementById("clock").innerText = time;-->
+<!--  }-->
+
+<!--  // function setInterbal(currentTime, milliseconds) {-->
+<!--  //-->
+<!--  // }-->
+
+<!--  //document.getElementById("clock").innerText = time;-->
+<!--  setInterval(currentTime, 1000);-->
+<!--  currentTime();-->
+<!--</script>-->
+
+</body>
+</html>

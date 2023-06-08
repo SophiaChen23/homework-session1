@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id = "activities">
+<header>
+    <div class = "main-header">
+                <dic class = "logo">
+                    <img src = "images/logo.png" alt = "Great Cliffs Logo" width = "125">
+                </dic>
+
+
+
+    <nav class = "main-menu">
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href = "cliffs.html"> Cliffs</a></li>
+            <li class = "active"><a href = "activities.html">Activities</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<section id = "timeofday">
+    <span> Your Current Local Time: </span>
+    <span id = "clock"><</span>
+</section>
+
+
+
+
+        <h1> Activities </h1>
+
+    <p>
+        There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:
+    </p>
+    <table >
+        <caption> Activities at the Cliffs</caption> <!-- -->
+    <thead><!-- table row-->
+        <th>Activity</th> <!--table heading -->
+        <th>West Cliff</th>
+        <th>North Cliff</th>
+        <th>East Clff</th>
+        <th>South Cliff</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hiking</td>
+            <td class = "selectable">College Hikes</td>
+            <td class = "selectable">Family Fun</td>
+            <td class = "selectable">Treasure Trails</td>
+            <td class = "selectable">Canyon Explorer</td>
+        </tr>
+        <tr>
+            <td>Kayak</td>
+            <td class = "selectable">Western Kayak Meetup</td>
+            <td>Not Avilable</td>
+            <td class = "selectable">Younth Kayaking</td>
+            <td class = "selectable">Kayak Down</td>
+        </tr>
+        <tr>
+            <td>Skydiving</td>
+            <td class = "selectable">Seacliff Diving</td>
+            <td class = "selectable">Sky is the limit</td>
+            <td>Not Available</td>
+            <td class = "selectable">Sky Diving for Beginners</td>
+        </tr>
+        <tr>
+            <td>Biking</td>
+            <td class = "selectable">Bicycle for One</td>
+            <td>Not Available</td>
+            <td class = "selectable">Bike Meetup Group</td>
+            <td>Not Available</td>
+        </tr>
+        <tr>
+            <td>Camping</td>
+            <td class = "selectable"> Younth Camp</td>
+            <td class = "selectable">Rent a Tent</td>
+            <td class = "selectable">Campground Adventure</td>
+            <td class = "selectable">Sunset Camping</td>
+        </tr>
+    </tbody>
+    </table>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/activity.js"></script>
+
+
+<section>
+    <ul id = "partners">
+        <script src="js/site_scripts.js"></script>
+    </ul>
+</section>
+
+
+<footer>
+    <div id = "nondisclaimer">
+        <div class = "copy">
+            &copy Copyright 2020 :: GreatCliffs.com
+        </div>
+        <div class = "social">
+            <a href = "#" class = "fa fa-facebook"></a>
+            <a href = "#" class = "fa fa-instagram"></a>
+            <a href = "#" class = "fa fa-twitter"></a>
+        </div>
+    </div>
+
+    <div id = "disclaimer">
+        <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+    </div>
+
+</footer>
+<script  src = "js/digclock.js"></script>
+
+<!--<script>-->
+<!--    function currentTime() {-->
+<!--        var d = new Date();-->
+<!--        var hr = d.getHours();-->
+<!--        var min = d.getMinutes();-->
+<!--        var sec = d.getSeconds();-->
+<!--        var ampm;-->
+
+<!--        var utchr = d.getUTCHours();-->
+<!--        // console.log(hr + " " + utchr);-->
+<!--        utchr = utchr < hr ? utchr + 24 : utchr;-->
+
+<!--        // var gmtHour = utchr > 12 ? utchr - 12 : utchr;-->
+
+
+<!--        // var localHour = d.getHours();-->
+
+<!--        var timeDiff = utchr - hr;-->
+<!--        var adjTimeDiff = Math.abs(timeDiff);-->
+
+
+<!--        var convertedTimezoneAbbr = "";-->
+<!--        switch (adjTimeDiff) {-->
+<!--            case 7:-->
+<!--                convertedTimezoneAbbr = "PT";-->
+<!--                break;-->
+<!--            case 6:-->
+<!--                convertedTimezoneAbbr = "MT";-->
+<!--                break;-->
+<!--            case 5:-->
+<!--                convertedTimezoneAbbr = "CT";-->
+<!--                break;-->
+<!--            case 4:-->
+<!--                convertedTimezoneAbbr = "ET";-->
+<!--                break;-->
+<!--            default:-->
+<!--                convertedTimezoneAbbr = "nothing"; // Use original abbreviation if no match-->
+<!--                break;-->
+<!--        }-->
+
+
+
+<!--        if (sec < 10) {-->
+<!--            sec = "0" + sec;-->
+<!--        }-->
+<!--        if (min < 10) {-->
+<!--            min = "0" + min;-->
+<!--        }-->
+<!--        if (hr == 12) {-->
+<!--            ampm = "PM";-->
+<!--        } else if (hr > 12){-->
+<!--            ampm = "PM";-->
+<!--        } else {-->
+<!--            ampm = "AM";-->
+<!--        }-->
+<!--        var time = hr + ":" + min + ":" + sec + " " + ampm + " " + convertedTimezoneAbbr;-->
+
+
+<!--        document.getElementById("clock").innerText = time;-->
+<!--    }-->
+
+<!--    // function setInterbal(currentTime, milliseconds) {-->
+<!--    //-->
+<!--    // }-->
+
+<!--    //document.getElementById("clock").innerText = time;-->
+<!--    setInterval(currentTime, 1000);-->
+<!--    currentTime();-->
+<!--</script>-->
+
+</body>
+</html>
