@@ -11,6 +11,7 @@
     <!-- Include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+<body id = "activities">
 <header>
 
 
@@ -99,19 +100,42 @@
     </tbody>
     </table>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/activity.js"></script>
+<!--<div id = "displaySelected">-->
+<!--    <div id = "result">-->
+<!--        <h4> My selected activities to enquire: </h4>-->
+<!--    </div>-->
+<!--    <div id = "sendinfo">-->
+<!--        <input type = "email" placeholder = "sophia@gmail.com"></input>-->
+<!--        <button>Get Info</button>-->
+<!--    </div>-->
+<!--</div>-->
+    <!-- Button to trigger the modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open Modal
+    </button>
 
-<div id = "displaySelected">
-    <div id = "result">
-        <h4> My selected activities to enquire: </h4>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Selected Activities</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Selected activities will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id = "sendinfo">
-        <input type = "email" placeholder = "sophia@gmail.com"></input>
-        <button>Get Info</button>
-    </div>
-</div>
+
 
 </main>
-<script src="js/activity.js"></script>
+
 <section>
     <div class="container">
         <div class="row">
