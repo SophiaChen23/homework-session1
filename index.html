@@ -5,27 +5,41 @@
     <meta charset= "utf-8">
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
 
 <!--    <div class = "main-header"></div>-->
     <body id = "home">
-        <header>
-            <div class = "main-header">
-                <div class = "logo">
-                    <img src = "images/logo.png" alt = "Great Cliffs Logo" >
+    <header>
+
+
+
+        <div class = "main-header">
+            <dic class = "logo">
+                <img src = "images/logo.png" alt = "Great Cliffs Logo" width = "125">
+            </dic>
+
+            <script src="js/extra.js"></script>
+            <nav class="main-menu">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-
-                <nav class = "main-menu">
-                    <ul>
-                        <li class = "active"><a href="index.html">Home</a></li>
-                        <li><a href = "cliffs.html"> Cliffs</a></li>
-                        <li><a href = "activities.html">Activities</a></li>
-                        <li><a href = "contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        </div>
+    </header>
         <section id = "timeofday">
             <span> Your Current Local Time: </span>
             <span id = "clock"><</span>
@@ -44,10 +58,29 @@
 
 
         <section>
-        <ul id = "partners">
-            <script src="js/site_scripts.js"></script>
-        </ul>
-    </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 <footer>
